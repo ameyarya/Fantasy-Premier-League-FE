@@ -1,68 +1,23 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# FANTASY PREMIER LEAGUE
+# fantasy-league-java-server
+## Web-Development Project (Spring 2020)
+### TEAM 5: Amey Arya, Anurag Shubham, Mohammed Owais Ahmed, Nikhita Singh
 
-## Available Scripts
+Problem Statement:
 
-In the project directory, you can run:
+In this project we are trying to emulate a fantasy soccer game similar to Fantasy Premier League (https://fantasy.premierleague.com/). The goal of this project is to allow users to create their own fantasy teams with real life players, assign points to the players based on their real-world performance which in turn determines the points earned by a user’s fantasy team. Each user has a budget to create a fantasy team and each player has a value assigned. The user must use his budget to create a team of 15 players.
 
-### `npm start`
+The two users of the application will be:
+- Admin: Responsible for populating/updating the data, assigning points to players after matches occur in the real world
+- Regular User: Create his own team, can create a group with other players, can create tournaments
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The overall project can be described as an amalgamation of the following sub problems:
+- Creating a team: The user will be given a budget of a certain amount. The user will be able to view all the players and their costs. The user can then add or remove players to their team based on their budget. The user must pick five defenders, five midfielders, three forwards and two goalkeepers.
+- Score prediction: Based on historical datasets which has information about the players and the points they have earned in the past seasons, the user will be able to see the predicted score for his team this season.
+- Groups/ tournaments: Thrill of competition is achieved when a user can put his team against teams of other users. In the same vein, a user can invite other users to form a group. Based on the performance of their teams, the users are assigned ranks in the group.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+We plan on using multiple available datasets such as:
+- https://www.kaggle.com/adithyarganesh/fantasy-premier-league
+- https://www.kaggle.com/chaibapat/fantasy-premier-league
+The official fantasy premier league provides API to access their database over the seasons:
+https://fantasy.premierleague.com/api/bootstrap-static/
