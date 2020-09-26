@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Fanatasy Premier League - Squad Selection</title>
+    <link rel="stylesheet" href=
+            "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href=
+            "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link href="squad-selection.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="navContainer">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <span>
+                <i class="fa-3x fa fa-futbol-o"></i>
+                &nbsp;&nbsp;
+            </span>
+        <a class="navbar-brand" href="#">Premier League</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                       role="button" data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false">
+                        Premier League
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Home</a>
+                        <a class="dropdown-item" href="#">Fixtures</a>
+                        <a class="dropdown-item" href="#">Results</a>
+                        <a class="dropdown-item" href="#">Tables</a>
+                        <a class="dropdown-item" href="#">Transfers</a>
+                        <a class="dropdown-item" href="#">Broadcast</a>
+                        <a class="dropdown-item" href="#">Tickets</a>
+                        <a class="dropdown-item" href="#">Clubs</a>
+                        <a class="dropdown-item" href="#">Players</a>
+                        <a class="dropdown-item" href="#">Managers</a>
+                        <a class="dropdown-item" href="#">News</a>
+                        <a class="dropdown-item" href="#">Social</a>
+                        <a class="dropdown-item" href="#">Youth</a>
+                        <a class="dropdown-item" href="#">Safeguarding</a>
+                        <a class="dropdown-item" href="#">History</a>
+                        <a class="dropdown-item" href="#">Referees</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1"
+                       role="button" data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false">
+                        Fantasy
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                        <a class="dropdown-item" href="#">Fantasy</a>
+                        <a class="dropdown-item" href="#">Fantasy Draft</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Stats </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Videos</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2"
+                       role="button" data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false">
+                        Communities
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                        <a class="dropdown-item" href="#">Latest</a>
+                        <a class="dropdown-item" href="#">Programmes</a>
+                        <a class="dropdown-item" href="#">PL Kicks Heroes</a>
+                        <a class="dropdown-item" href="#">Strategies</a>
+                        <a class="dropdown-item" href="#">PL Primary Starts</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3"
+                       role="button" data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false">
+                        More
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                        <a class="dropdown-item" href="#">No room for Racism</a>
+                        <a class="dropdown-item" href="#">ePremier League</a>
+                        <a class="dropdown-item" href="#">Asia Trophy</a>
+                        <a class="dropdown-item" href="#">USA Bar Finder</a>
+                        <a class="dropdown-item" href="#">Transfers</a>
+                        <a class="dropdown-item" href="#">Poppy</a>
+                        <a class="dropdown-item" href="#">Photos</a>
+                        <a class="dropdown-item" href="#">VAR</a>
+                        <a class="dropdown-item" href="#">Nike Ball Hub</a>
+                        <a class="dropdown-item" href="#">About</a>
+                        <a class="dropdown-item" href="#">Parnters</a>
+                        <a class="dropdown-item" href="#">PL Live</a>
+                        <a class="dropdown-item" href="#">Rainbow</a>
+                        <a class="dropdown-item" href="#">Laces</a>
+                        <a class="dropdown-item" href="#">Publication</a>
+                        <a class="dropdown-item" href="#">Legal</a>
+                        <a class="dropdown-item" href="#">Contact Us</a>
+                        <a class="dropdown-item" href="#">This is Premier League</a>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+</div>
+<div class="image-div">
+    <div class="imageWrapper">
+        <h1><strong>Fantasy Premier League</strong></h1>
+
+    </div>
+    <div class="navForSlider">
+        <ul class="nav nav-tabs">
+            <li class="nav-item navSliderPills">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item navSliderPills">
+                <a class="nav-link active" href="#">Squad Selection</a>
+            </li>
+            <li class="nav-item navSliderPills">
+                <a class="nav-link" href="#">Help</a>
+            </li>
+            <li class="nav-item navSliderPills">
+                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Sign Out</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="playerImage">
+
+    </div>
+</div>
+
+<div class="selectionBody">
+    <div class="squadSelection">
+        <div id="squadSelectionHeader">
+            <h4 class="title"> Squad Selection</h4>
+            <hr/>
+        </div>
+        <div class="squadSelectionPara">
+            <p class="title">
+                Select a maximum of 3 players from a single team or 'Auto Pick' if you're short of
+                time.
+            </p>
+        </div>
+        <div class="selectionButtons">
+            <button class="block btn btn-primary btn-lg">
+                Auto Pick
+            </button>
+            <button class="block btn btn-primary btn-lg">
+                Reset
+            </button>
+        </div>
+        <hr style="margin-top: 50px"/>
+        <div class="scoreCardOuter">
+            <div class="scoreCardInner">
+                <div class="scoreBoardPanel">
+                    <h6 class="title score">
+                        Players Selected
+                    </h6>
+                    <div class="title">
+                        <h3>
+                            0/15
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="scoreCardInner">
+                <div class="scoreBoardPanel">
+                    <h6 class="title score">
+                        Money Remaining
+                    </h6>
+                    <div class="title">
+                        <h3>
+                            100.0
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr/>
+        <div class="pitchOuterDiv">
+            <div class="pitch">
+                <div class="addPlayerStrip">
+                    <div class="addPlayerBlock1">
+
+                    </div>
+                    <div class="addPlayerBlock1">
+                        <div class="addPlayerDiv">
+                            <button class="addPlayer">
+                            </button>
+                            <h6 class="playerDescription title">ADD GKP</h6>
+                        </div>
+                    </div>
+                    <div class="addPlayerBlock1">
+                        <div class="addPlayerDiv">
+                            <button class="addPlayer">
+                            </button>
+                            <h6 class="playerDescription title">ADD GKP</h6>
+                        </div>
+                    </div>
+                    <div class="addPlayerBlock1">
+
+                    </div>
+                </div>
+                <div class="addPlayerStrip">
+                    <div class="addPlayerBlock2">
+                        <div class="addPlayerDiv">
+                            <button class="addPlayer">
+                            </button>
+                            <h6 class="playerDescription title">ADD DEF</h6>
+                        </div>
+                    </div>
+                    <div class="addPlayerBlock2">
+                        <div class="addPlayerDiv">
+                            <button class="addPlayer">
+                            </button>
+                            <h6 class="playerDescription title">ADD DEF</h6>
+                        </div>
+                    </div>
+                    <div class="addPlayerBlock2">
+                        <div class="addPlayerDiv">
+                            <button class="addPlayer">
+                            </button>
+                            <h6 class="playerDescription title">ADD DEF</h6>
+                        </div>
+                    </div>
+                    <div class="addPlayerBlock2">
+                        <div class="addPlayerDiv">
+                            <button class="addPlayer">
+                            </button>
+                            <h6 class="playerDescription title">ADD DEF</h6>
+                        </div>
+                    </div>
+                    <div class="addPlayerBlock2">
+                        <div class="addPlayerDiv">
+                            <button class="addPlayer">
+                            </button>
+                            <h6 class="playerDescription title">ADD DEF</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="addPlayerStrip">
+                    <div class="addPlayerBlock2">
+                        <div class="addPlayerDiv">
+                            <button class="addPlayer">
+                            </button>
+                            <h6 class="playerDescription title">ADD MID</h6>
+                        </div>
+                    </div>
+                    <div class="addPlayerBlock2">
+                        <div class="addPlayerDiv">
+                            <button class="addPlayer">
+                            </button>
+                            <h6 class="playerDescription title">ADD MID</h6>
+                        </div>
+                    </div>
+                    <div class="addPlayerBlock2">
+                        <div class="addPlayerDiv">
+                            <button class="addPlayer">
+                            </button>
+                            <h6 class="playerDescription title">ADD MID</h6>
+                        </div>
+                    </div>
+                    <div class="addPlayerBlock2">
+                        <div class="addPlayerDiv">
+                            <button class="addPlayer">
+                            </button>
+                            <h6 class="playerDescription title">ADD MID</h6>
+                        </div>
+                    </div>
+                    <div class="addPlayerBlock2">
+                        <div class="addPlayerDiv">
+                            <button class="addPlayer">
+                            </button>
+                            <h6 class="playerDescription title">ADD MID</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="addPlayerStrip">
+                    <div class="addPlayerBlock1">
+                        <div class="addPlayerDiv">
+                            <button class="addPlayer">
+                            </button>
+                            <h6 class="playerDescription title">ADD FWD</h6>
+                        </div>
+                    </div>
+                    <div class="addPlayerBlock1">
+                        <div class="addPlayerDiv">
+                            <button class="addPlayer">
+                            </button>
+                            <h6 class="playerDescription title">ADD FWD</h6>
+                        </div>
+                    </div>
+                    <div class="addPlayerBlock1">
+                        <div class="addPlayerDiv">
+                            <button class="addPlayer">
+                            </button>
+                            <h6 class="playerDescription title">ADD FWD</h6>
+                        </div>
+                    </div>
+                    <div class="addPlayerBlock1">
+                        <div class="addPlayerDiv">
+                            <button class="addPlayer">
+                            </button>
+                            <h6 class="playerDescription title">ADD FWD</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="saveButton">
+                <button class="saveBtn btn btn-secondary btn-lg title" disabled>
+                    Enter Squad
+                </button>
+            </div>
+            <div class="navButtons">
+                <div class="prevNext">
+                    <div class="prevNextButton">
+                        <button class="btn btn-secondary btn-lg title previousButton">
+                            Previous
+                        </button>
+                    </div>
+                </div>
+                <div class="prevNext">
+                    <div class="prevNextButton">
+                        <button class="btn btn-secondary btn-lg title nextButton">
+                            Next
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr/>
+    </div>
+
+    <div class="playerSelection">
+        <div class="playerSelectionHeading">
+            <h3 class="title">Player Selection</h3>
+        </div>
+
+        <form class="ElementList">
+            <div class="FieldRenderers">
+                <label for="filter">
+                    <span class="FieldRenderers_FieldLabel title">
+                        View
+                    </span>
+                </label>
+                <div>
+                    <select id="filter" class="FieldRenderers_Select form-control title">
+                        <optgroup label="Global">
+                            <option value="all" aria-selected="true">
+                                All players
+                            </option>
+                        </optgroup>
+                        <optgroup label="By Position">
+                            <option value="et_1" aria-selected="false">
+                                Goalkeepers
+                            </option>
+                            <option value="et_2" aria-selected="false">
+                                Defenders
+                            </option>
+                            <option value="et_3" aria-selected="false">
+                                Midfielders
+                            </option>
+                            <option value="et_4" aria-selected="false">
+                                Forwards
+                            </option>
+                        </optgroup>
+                        <optgroup label="By Team">
+                            <option value="te_1" aria-selected="false">
+                                Arsenal
+                            </option>
+                            <option value="te_2" aria-selected="false">
+                                Aston Villa
+                            </option>
+                            <option value="te_3" aria-selected="false">
+                                Bournemouth
+                            </option>
+                            <option value="te_4" aria-selected="false">
+                                Brighton
+                            </option>
+                            <option value="te_5" aria-selected="false">
+                                Burnley
+                            </option>
+                            <option value="te_6" aria-selected="false">
+                                Chelsea
+                            </option>
+                            <option value="te_7" aria-selected="false">
+                                Crystal Palace
+                            </option>
+                            <option value="te_8" aria-selected="false">
+                                Everton
+                            </option>
+                            <option value="te_9" aria-selected="false">
+                                Leicester
+                            </option>
+                            <option value="te_10" aria-selected="false">
+                                Liverpool
+                            </option>
+                            <option value="te_11" aria-selected="false">
+                                Man City
+                            </option>
+                            <option value="te_12" aria-selected="false">
+                                Man Utd
+                            </option>
+                            <option value="te_13" aria-selected="false">
+                                Newcastle
+                            </option>
+                            <option value="te_14" aria-selected="false">
+                                Norwich
+                            </option>
+                            <option value="te_15" aria-selected="false">
+                                Sheffield Utd
+                            </option>
+                            <option value="te_16" aria-selected="false">
+                                Southampton
+                            </option>
+                            <option value="te_17" aria-selected="false">
+                                Spurs
+                            </option>
+                            <option value="te_18" aria-selected="false">
+                                Watford
+                            </option>
+                            <option value="te_19" aria-selected="false">
+                                West Ham
+                            </option>
+                            <option value="te_20" aria-selected="false">
+                                Wolves
+                            </option>
+                        </optgroup>
+                    </select>
+                </div>
+            </div>
+            <div class="FieldRenderers">
+                <label for="sort">
+                    <span class="FieldRenderers_FieldLabel title">
+                        Sorted by
+                    </span>
+                </label>
+                <div>
+                    <select id="sort" class="FieldRenderers_Select form-control title">
+                        <option value="total_points" aria-selected="false">
+                            Total points
+                        </option>
+                        <option value="event_points" aria-selected="false">
+                            Round points
+                        </option>
+                        <option value="now_cost" aria-selected="false">
+                            Price
+                        </option>
+                        <option value="selected_by_percent" aria-selected="false">
+                            Team selected by %
+                        </option>
+                        <option value="minutes" aria-selected="false">
+                            Minutes played
+                        </option>
+                        <option value="goals_scored" aria-selected="false">
+                            Goals scored
+                        </option>
+                        <option value="assists" aria-selected="false">
+                            Assists
+                        </option>
+                        <option value="clean_sheets" aria-selected="false">
+                            Clean sheets
+                        </option>
+                        <option value="goals_conceded" aria-selected="false">
+                            Goals conceded
+                        </option>
+                        <option value="own_goals" aria-selected="false">
+                            Own goals
+                        </option>
+                        <option value="penalties_saved" aria-selected="false">
+                            Penalties saved
+                        </option>
+                        <option value="penalties_missed" aria-selected="false">
+                            Penalties missed
+                        </option>
+                        <option value="yellow_cards" aria-selected="false">
+                            Yellow cards
+                        </option>
+                        <option value="red_cards" aria-selected="false">
+                            Red cards
+                        </option>
+                        <option value="saves" aria-selected="false">
+                            Saves
+                        </option>
+                        <option value="bonus" aria-selected="false">
+                            Bonus
+                        </option>
+                        <option value="bps" aria-selected="false">
+                            Bonus Points System
+                        </option>
+                        <option value="influence" aria-selected="false">
+                            Influence
+                        </option>
+                        <option value="creativity" aria-selected="false">
+                            Creativity
+                        </option>
+                        <option value="threat" aria-selected="false">
+                            Threat
+                        </option>
+                        <option value="ict_index" aria-selected="false">
+                            ICT Index
+                        </option>
+                        <option value="form" aria-selected="false">
+                            Form
+                        </option>
+                        <option value="dreamteam_count" aria-selected="false">
+                            Times in Dream Team
+                        </option>
+                        <option value="value_form" aria-selected="false">
+                            Value (form)
+                        </option>
+                        <option value="value_season" aria-selected="false">
+                            Value (season)
+                        </option>
+                        <option value="points_per_game" aria-selected="false">
+                            Points per match
+                        </option>
+                        <option value="transfers_in" aria-selected="false">
+                            Transfers in
+                        </option>
+                        <option value="transfers_out" aria-selected="false">
+                            Transfers out
+                        </option>
+                        <option value="transfers_in_event" aria-selected="false">
+                            Transfers in (round)
+                        </option>
+                        <option value="transfers_out_event" aria-selected="false">
+                            Transfers out (round)
+                        </option>
+                        <option value="cost_change_start" aria-selected="false">
+                            Price rise
+                        </option>
+                        <option value="cost_change_start_fall" aria-selected="false">
+                            Price fall
+                        </option>
+                        <option value="cost_change_event" aria-selected="false">
+                            Price rise (round)
+                        </option>
+                        <option value="cost_change_event_fall" aria-selected="false">
+                            Price fall (round)
+                        </option>
+                    </select>
+                </div>
+            </div>
+            <div class="FieldRenderers title">
+                <label for="search">
+                    <span class="FieldRenderers_FieldLabel">
+                        Search
+                    </span>
+                </label>
+                <div>
+                    <input type="search" id="search" name="search" class="form-control" value="">
+                </div>
+            </div>
+            <div class="FieldRenderers">
+                <label for="maxCost">
+                    <span class="FieldRenderers_FieldLabel title">
+                        Max cost
+                    </span>
+                    <br>
+                    <span class="FieldRenderers_FieldLabel small title">
+                        Between 3.9 and 12.7
+                    </span>
+                </label>
+                <div>
+                    <select id="maxCost" class="form-control title">
+                        <option value="127" aria-selected="true">12.7</option>
+                        <option value="122" aria-selected="false">12.2</option>
+                        <option value="117" aria-selected="false">11.7</option>
+                        <option value="112" aria-selected="false">11.2</option>
+                        <option value="107" aria-selected="false">10.7</option>
+                        <option value="102" aria-selected="false">10.2</option>
+                        <option value="97" aria-selected="false">9.7</option>
+                        <option value="92" aria-selected="false">9.2</option>
+                        <option value="87" aria-selected="false">8.7</option>
+                        <option value="82" aria-selected="false">8.2</option>
+                        <option value="77" aria-selected="false">7.7</option>
+                        <option value="72" aria-selected="false">7.2</option>
+                        <option value="67" aria-selected="false">6.7</option>
+                        <option value="62" aria-selected="false">6.2</option>
+                        <option value="57" aria-selected="false">5.7</option>
+                        <option value="52" aria-selected="false">5.2</option>
+                        <option value="47" aria-selected="false">4.7</option>
+                        <option value="42" aria-selected="false">4.2</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+        <div class="tableWrap">
+            <table class="table table-bordered table-striped tableBorder title">
+                <thead class="table-warning">
+                <tr>
+                    <th>
+                        &nbsp;
+                    </th>
+                    <th>
+                        <button class="tableButtons">
+                            Goalkeepers
+                        </button>
+                    </th>
+                    <th>£</th>
+                    <th>**</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <button class="tableButtons">
+                            <svg width="24" height="24" viewBox="0 0 24 24">
+                                <g fill-rule="evenodd">
+                                    <path d="M14.9002 18.7465L14.6742 19.7215C14.0002 20.0205 13.4002 20.1715 13.0252 20.3215 12.6502 20.4715 12.1252 20.5465 11.6002 20.5465 10.7752 20.5465 10.1002 20.3215 9.6502 19.9465 9.2002 19.5715 8.9752 19.0465 8.9752 18.3715 8.9752 18.1455 8.9752 17.8465 9.0502 17.6215 9.0502 17.3955 9.1252 17.0965 9.2002 16.7215L10.1002 13.6455C10.1752 13.3465 10.2502 13.0465 10.3252 12.8215 10.4002 12.5965 10.4002 12.2965 10.4002 12.0715 10.4002 11.6965 10.3252 11.3965 10.1752 11.2465 10.0252 11.0965 9.7252 11.0215 9.2752 11.0215 9.0502 11.0215 8.8252 11.0215 8.6002 11.0965 8.3752 11.1715 8.1502 11.2465 8.0002 11.3215L8.2252 10.3465C8.8252 10.1215 9.3502 9.8965 9.8752 9.7465 10.4002 9.5965 10.8502 9.5215 11.3752 9.5215 12.2002 9.5215 12.8752 9.7465 13.3252 10.1215 13.7752 10.4965 14.0002 11.0215 14.0002 11.6965 14.0002 11.8465 13.8502 13.0465 13.7752 13.2705L12.9502 16.3465C12.8752 16.5715 12.7992 16.8715 12.7252 17.1715 12.6502 17.4715 12.6502 17.6965 12.6502 17.8465 12.6502 18.2215 12.7252 18.5205 12.9502 18.6715 13.1002 18.8215 13.4752 18.8955 13.9242 18.8955 14.1502 18.8955 14.7502 18.8215 14.9002 18.7465M15.0389 5.9999C15.0389 7.1039 14.1429 7.9999 13.0389 7.9999 11.9349 7.9999 11.0389 7.1039 11.0389 5.9999 11.0389 4.8959 11.9349 3.9999 13.0389 3.9999 14.1429 3.9999 15.0389 4.8959 15.0389 5.9999"
+                                          fill="currentColor"></path>
+                                </g>
+                            </svg>
+                        </button>
+                    </td>
+                    <td>
+                        <button class="tableButtons">
+                            Pope
+                        </button>
+                    </td>
+                    <td>
+                        4.9
+                    </td>
+                    <td>
+                        128
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="tableButtons">
+                            <svg width="24" height="24" viewBox="0 0 24 24">
+                                <g fill-rule="evenodd">
+                                    <path d="M14.9002 18.7465L14.6742 19.7215C14.0002 20.0205 13.4002 20.1715 13.0252 20.3215 12.6502 20.4715 12.1252 20.5465 11.6002 20.5465 10.7752 20.5465 10.1002 20.3215 9.6502 19.9465 9.2002 19.5715 8.9752 19.0465 8.9752 18.3715 8.9752 18.1455 8.9752 17.8465 9.0502 17.6215 9.0502 17.3955 9.1252 17.0965 9.2002 16.7215L10.1002 13.6455C10.1752 13.3465 10.2502 13.0465 10.3252 12.8215 10.4002 12.5965 10.4002 12.2965 10.4002 12.0715 10.4002 11.6965 10.3252 11.3965 10.1752 11.2465 10.0252 11.0965 9.7252 11.0215 9.2752 11.0215 9.0502 11.0215 8.8252 11.0215 8.6002 11.0965 8.3752 11.1715 8.1502 11.2465 8.0002 11.3215L8.2252 10.3465C8.8252 10.1215 9.3502 9.8965 9.8752 9.7465 10.4002 9.5965 10.8502 9.5215 11.3752 9.5215 12.2002 9.5215 12.8752 9.7465 13.3252 10.1215 13.7752 10.4965 14.0002 11.0215 14.0002 11.6965 14.0002 11.8465 13.8502 13.0465 13.7752 13.2705L12.9502 16.3465C12.8752 16.5715 12.7992 16.8715 12.7252 17.1715 12.6502 17.4715 12.6502 17.6965 12.6502 17.8465 12.6502 18.2215 12.7252 18.5205 12.9502 18.6715 13.1002 18.8215 13.4752 18.8955 13.9242 18.8955 14.1502 18.8955 14.7502 18.8215 14.9002 18.7465M15.0389 5.9999C15.0389 7.1039 14.1429 7.9999 13.0389 7.9999 11.9349 7.9999 11.0389 7.1039 11.0389 5.9999 11.0389 4.8959 11.9349 3.9999 13.0389 3.9999 14.1429 3.9999 15.0389 4.8959 15.0389 5.9999"
+                                          fill="currentColor"></path>
+                                </g>
+                            </svg>
+                        </button>
+                    </td>
+                    <td>
+                        <button class="tableButtons">
+                            Henderson
+                        </button>
+                    </td>
+                    <td>5.2</td>
+                    <td>122</td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="tableButtons">
+                            <svg width="24" height="24" viewBox="0 0 24 24">
+                                <g fill-rule="evenodd">
+                                    <path d="M14.9002 18.7465L14.6742 19.7215C14.0002 20.0205 13.4002 20.1715 13.0252 20.3215 12.6502 20.4715 12.1252 20.5465 11.6002 20.5465 10.7752 20.5465 10.1002 20.3215 9.6502 19.9465 9.2002 19.5715 8.9752 19.0465 8.9752 18.3715 8.9752 18.1455 8.9752 17.8465 9.0502 17.6215 9.0502 17.3955 9.1252 17.0965 9.2002 16.7215L10.1002 13.6455C10.1752 13.3465 10.2502 13.0465 10.3252 12.8215 10.4002 12.5965 10.4002 12.2965 10.4002 12.0715 10.4002 11.6965 10.3252 11.3965 10.1752 11.2465 10.0252 11.0965 9.7252 11.0215 9.2752 11.0215 9.0502 11.0215 8.8252 11.0215 8.6002 11.0965 8.3752 11.1715 8.1502 11.2465 8.0002 11.3215L8.2252 10.3465C8.8252 10.1215 9.3502 9.8965 9.8752 9.7465 10.4002 9.5965 10.8502 9.5215 11.3752 9.5215 12.2002 9.5215 12.8752 9.7465 13.3252 10.1215 13.7752 10.4965 14.0002 11.0215 14.0002 11.6965 14.0002 11.8465 13.8502 13.0465 13.7752 13.2705L12.9502 16.3465C12.8752 16.5715 12.7992 16.8715 12.7252 17.1715 12.6502 17.4715 12.6502 17.6965 12.6502 17.8465 12.6502 18.2215 12.7252 18.5205 12.9502 18.6715 13.1002 18.8215 13.4752 18.8955 13.9242 18.8955 14.1502 18.8955 14.7502 18.8215 14.9002 18.7465M15.0389 5.9999C15.0389 7.1039 14.1429 7.9999 13.0389 7.9999 11.9349 7.9999 11.0389 7.1039 11.0389 5.9999 11.0389 4.8959 11.9349 3.9999 13.0389 3.9999 14.1429 3.9999 15.0389 4.8959 15.0389 5.9999"
+                                          fill="currentColor"></path>
+                                </g>
+                            </svg>
+                        </button>
+                    </td>
+                    <td>
+                        <button class="tableButtons">
+                            Schmeichel
+                        </button>
+                    </td>
+                    <td>5.3</td>
+                    <td>119</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="tableWrap">
+            <table class="table table-bordered table-striped tableBorder title">
+                <thead class="table-success">
+                <tr>
+                    <th>
+                        &nbsp;
+                    </th>
+                    <th>
+                        <button class="tableButtons">
+                            Defenders
+                        </button>
+                    </th>
+                    <th>£</th>
+                    <th>**</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <button class="tableButtons">
+                            <svg width="24" height="24" viewBox="0 0 24 24">
+                                <g fill-rule="evenodd">
+                                    <path d="M14.9002 18.7465L14.6742 19.7215C14.0002 20.0205 13.4002 20.1715 13.0252 20.3215 12.6502 20.4715 12.1252 20.5465 11.6002 20.5465 10.7752 20.5465 10.1002 20.3215 9.6502 19.9465 9.2002 19.5715 8.9752 19.0465 8.9752 18.3715 8.9752 18.1455 8.9752 17.8465 9.0502 17.6215 9.0502 17.3955 9.1252 17.0965 9.2002 16.7215L10.1002 13.6455C10.1752 13.3465 10.2502 13.0465 10.3252 12.8215 10.4002 12.5965 10.4002 12.2965 10.4002 12.0715 10.4002 11.6965 10.3252 11.3965 10.1752 11.2465 10.0252 11.0965 9.7252 11.0215 9.2752 11.0215 9.0502 11.0215 8.8252 11.0215 8.6002 11.0965 8.3752 11.1715 8.1502 11.2465 8.0002 11.3215L8.2252 10.3465C8.8252 10.1215 9.3502 9.8965 9.8752 9.7465 10.4002 9.5965 10.8502 9.5215 11.3752 9.5215 12.2002 9.5215 12.8752 9.7465 13.3252 10.1215 13.7752 10.4965 14.0002 11.0215 14.0002 11.6965 14.0002 11.8465 13.8502 13.0465 13.7752 13.2705L12.9502 16.3465C12.8752 16.5715 12.7992 16.8715 12.7252 17.1715 12.6502 17.4715 12.6502 17.6965 12.6502 17.8465 12.6502 18.2215 12.7252 18.5205 12.9502 18.6715 13.1002 18.8215 13.4752 18.8955 13.9242 18.8955 14.1502 18.8955 14.7502 18.8215 14.9002 18.7465M15.0389 5.9999C15.0389 7.1039 14.1429 7.9999 13.0389 7.9999 11.9349 7.9999 11.0389 7.1039 11.0389 5.9999 11.0389 4.8959 11.9349 3.9999 13.0389 3.9999 14.1429 3.9999 15.0389 4.8959 15.0389 5.9999"
+                                          fill="currentColor"></path>
+                                </g>
+                            </svg>
+                        </button>
+                    </td>
+                    <td>
+                        <button class="tableButtons">
+                            Pope
+                        </button>
+                    </td>
+                    <td>
+                        4.9
+                    </td>
+                    <td>
+                        128
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="tableButtons">
+                            <svg width="24" height="24" viewBox="0 0 24 24">
+                                <g fill-rule="evenodd">
+                                    <path d="M14.9002 18.7465L14.6742 19.7215C14.0002 20.0205 13.4002 20.1715 13.0252 20.3215 12.6502 20.4715 12.1252 20.5465 11.6002 20.5465 10.7752 20.5465 10.1002 20.3215 9.6502 19.9465 9.2002 19.5715 8.9752 19.0465 8.9752 18.3715 8.9752 18.1455 8.9752 17.8465 9.0502 17.6215 9.0502 17.3955 9.1252 17.0965 9.2002 16.7215L10.1002 13.6455C10.1752 13.3465 10.2502 13.0465 10.3252 12.8215 10.4002 12.5965 10.4002 12.2965 10.4002 12.0715 10.4002 11.6965 10.3252 11.3965 10.1752 11.2465 10.0252 11.0965 9.7252 11.0215 9.2752 11.0215 9.0502 11.0215 8.8252 11.0215 8.6002 11.0965 8.3752 11.1715 8.1502 11.2465 8.0002 11.3215L8.2252 10.3465C8.8252 10.1215 9.3502 9.8965 9.8752 9.7465 10.4002 9.5965 10.8502 9.5215 11.3752 9.5215 12.2002 9.5215 12.8752 9.7465 13.3252 10.1215 13.7752 10.4965 14.0002 11.0215 14.0002 11.6965 14.0002 11.8465 13.8502 13.0465 13.7752 13.2705L12.9502 16.3465C12.8752 16.5715 12.7992 16.8715 12.7252 17.1715 12.6502 17.4715 12.6502 17.6965 12.6502 17.8465 12.6502 18.2215 12.7252 18.5205 12.9502 18.6715 13.1002 18.8215 13.4752 18.8955 13.9242 18.8955 14.1502 18.8955 14.7502 18.8215 14.9002 18.7465M15.0389 5.9999C15.0389 7.1039 14.1429 7.9999 13.0389 7.9999 11.9349 7.9999 11.0389 7.1039 11.0389 5.9999 11.0389 4.8959 11.9349 3.9999 13.0389 3.9999 14.1429 3.9999 15.0389 4.8959 15.0389 5.9999"
+                                          fill="currentColor"></path>
+                                </g>
+                            </svg>
+                        </button>
+                    </td>
+                    <td>
+                        <button class="tableButtons">
+                            Henderson
+                        </button>
+                    </td>
+                    <td>5.2</td>
+                    <td>122</td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="tableButtons">
+                            <svg width="24" height="24" viewBox="0 0 24 24">
+                                <g fill-rule="evenodd">
+                                    <path d="M14.9002 18.7465L14.6742 19.7215C14.0002 20.0205 13.4002 20.1715 13.0252 20.3215 12.6502 20.4715 12.1252 20.5465 11.6002 20.5465 10.7752 20.5465 10.1002 20.3215 9.6502 19.9465 9.2002 19.5715 8.9752 19.0465 8.9752 18.3715 8.9752 18.1455 8.9752 17.8465 9.0502 17.6215 9.0502 17.3955 9.1252 17.0965 9.2002 16.7215L10.1002 13.6455C10.1752 13.3465 10.2502 13.0465 10.3252 12.8215 10.4002 12.5965 10.4002 12.2965 10.4002 12.0715 10.4002 11.6965 10.3252 11.3965 10.1752 11.2465 10.0252 11.0965 9.7252 11.0215 9.2752 11.0215 9.0502 11.0215 8.8252 11.0215 8.6002 11.0965 8.3752 11.1715 8.1502 11.2465 8.0002 11.3215L8.2252 10.3465C8.8252 10.1215 9.3502 9.8965 9.8752 9.7465 10.4002 9.5965 10.8502 9.5215 11.3752 9.5215 12.2002 9.5215 12.8752 9.7465 13.3252 10.1215 13.7752 10.4965 14.0002 11.0215 14.0002 11.6965 14.0002 11.8465 13.8502 13.0465 13.7752 13.2705L12.9502 16.3465C12.8752 16.5715 12.7992 16.8715 12.7252 17.1715 12.6502 17.4715 12.6502 17.6965 12.6502 17.8465 12.6502 18.2215 12.7252 18.5205 12.9502 18.6715 13.1002 18.8215 13.4752 18.8955 13.9242 18.8955 14.1502 18.8955 14.7502 18.8215 14.9002 18.7465M15.0389 5.9999C15.0389 7.1039 14.1429 7.9999 13.0389 7.9999 11.9349 7.9999 11.0389 7.1039 11.0389 5.9999 11.0389 4.8959 11.9349 3.9999 13.0389 3.9999 14.1429 3.9999 15.0389 4.8959 15.0389 5.9999"
+                                          fill="currentColor"></path>
+                                </g>
+                            </svg>
+                        </button>
+                    </td>
+                    <td>
+                        <button class="tableButtons">
+                            Schmeichel
+                        </button>
+                    </td>
+                    <td>5.3</td>
+                    <td>119</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="tableWrap">
+            <table class="table table-bordered table-striped tableBorder title">
+                <thead class="table-primary">
+                <tr>
+                    <th>
+                        &nbsp;
+                    </th>
+                    <th>
+                        <button class="tableButtons">
+                            Midfielders
+                        </button>
+                    </th>
+                    <th>£</th>
+                    <th>**</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <button class="tableButtons">
+                            <svg width="24" height="24" viewBox="0 0 24 24">
+                                <g fill-rule="evenodd">
+                                    <path d="M14.9002 18.7465L14.6742 19.7215C14.0002 20.0205 13.4002 20.1715 13.0252 20.3215 12.6502 20.4715 12.1252 20.5465 11.6002 20.5465 10.7752 20.5465 10.1002 20.3215 9.6502 19.9465 9.2002 19.5715 8.9752 19.0465 8.9752 18.3715 8.9752 18.1455 8.9752 17.8465 9.0502 17.6215 9.0502 17.3955 9.1252 17.0965 9.2002 16.7215L10.1002 13.6455C10.1752 13.3465 10.2502 13.0465 10.3252 12.8215 10.4002 12.5965 10.4002 12.2965 10.4002 12.0715 10.4002 11.6965 10.3252 11.3965 10.1752 11.2465 10.0252 11.0965 9.7252 11.0215 9.2752 11.0215 9.0502 11.0215 8.8252 11.0215 8.6002 11.0965 8.3752 11.1715 8.1502 11.2465 8.0002 11.3215L8.2252 10.3465C8.8252 10.1215 9.3502 9.8965 9.8752 9.7465 10.4002 9.5965 10.8502 9.5215 11.3752 9.5215 12.2002 9.5215 12.8752 9.7465 13.3252 10.1215 13.7752 10.4965 14.0002 11.0215 14.0002 11.6965 14.0002 11.8465 13.8502 13.0465 13.7752 13.2705L12.9502 16.3465C12.8752 16.5715 12.7992 16.8715 12.7252 17.1715 12.6502 17.4715 12.6502 17.6965 12.6502 17.8465 12.6502 18.2215 12.7252 18.5205 12.9502 18.6715 13.1002 18.8215 13.4752 18.8955 13.9242 18.8955 14.1502 18.8955 14.7502 18.8215 14.9002 18.7465M15.0389 5.9999C15.0389 7.1039 14.1429 7.9999 13.0389 7.9999 11.9349 7.9999 11.0389 7.1039 11.0389 5.9999 11.0389 4.8959 11.9349 3.9999 13.0389 3.9999 14.1429 3.9999 15.0389 4.8959 15.0389 5.9999"
+                                          fill="currentColor"></path>
+                                </g>
+                            </svg>
+                        </button>
+                    </td>
+                    <td>
+                        <button class="tableButtons">
+                            Pope
+                        </button>
+                    </td>
+                    <td>
+                        4.9
+                    </td>
+                    <td>
+                        128
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="tableButtons">
+                            <svg width="24" height="24" viewBox="0 0 24 24">
+                                <g fill-rule="evenodd">
+                                    <path d="M14.9002 18.7465L14.6742 19.7215C14.0002 20.0205 13.4002 20.1715 13.0252 20.3215 12.6502 20.4715 12.1252 20.5465 11.6002 20.5465 10.7752 20.5465 10.1002 20.3215 9.6502 19.9465 9.2002 19.5715 8.9752 19.0465 8.9752 18.3715 8.9752 18.1455 8.9752 17.8465 9.0502 17.6215 9.0502 17.3955 9.1252 17.0965 9.2002 16.7215L10.1002 13.6455C10.1752 13.3465 10.2502 13.0465 10.3252 12.8215 10.4002 12.5965 10.4002 12.2965 10.4002 12.0715 10.4002 11.6965 10.3252 11.3965 10.1752 11.2465 10.0252 11.0965 9.7252 11.0215 9.2752 11.0215 9.0502 11.0215 8.8252 11.0215 8.6002 11.0965 8.3752 11.1715 8.1502 11.2465 8.0002 11.3215L8.2252 10.3465C8.8252 10.1215 9.3502 9.8965 9.8752 9.7465 10.4002 9.5965 10.8502 9.5215 11.3752 9.5215 12.2002 9.5215 12.8752 9.7465 13.3252 10.1215 13.7752 10.4965 14.0002 11.0215 14.0002 11.6965 14.0002 11.8465 13.8502 13.0465 13.7752 13.2705L12.9502 16.3465C12.8752 16.5715 12.7992 16.8715 12.7252 17.1715 12.6502 17.4715 12.6502 17.6965 12.6502 17.8465 12.6502 18.2215 12.7252 18.5205 12.9502 18.6715 13.1002 18.8215 13.4752 18.8955 13.9242 18.8955 14.1502 18.8955 14.7502 18.8215 14.9002 18.7465M15.0389 5.9999C15.0389 7.1039 14.1429 7.9999 13.0389 7.9999 11.9349 7.9999 11.0389 7.1039 11.0389 5.9999 11.0389 4.8959 11.9349 3.9999 13.0389 3.9999 14.1429 3.9999 15.0389 4.8959 15.0389 5.9999"
+                                          fill="currentColor"></path>
+                                </g>
+                            </svg>
+                        </button>
+                    </td>
+                    <td>
+                        <button class="tableButtons">
+                            Henderson
+                        </button>
+                    </td>
+                    <td>5.2</td>
+                    <td>122</td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="tableButtons">
+                            <svg width="24" height="24" viewBox="0 0 24 24">
+                                <g fill-rule="evenodd">
+                                    <path d="M14.9002 18.7465L14.6742 19.7215C14.0002 20.0205 13.4002 20.1715 13.0252 20.3215 12.6502 20.4715 12.1252 20.5465 11.6002 20.5465 10.7752 20.5465 10.1002 20.3215 9.6502 19.9465 9.2002 19.5715 8.9752 19.0465 8.9752 18.3715 8.9752 18.1455 8.9752 17.8465 9.0502 17.6215 9.0502 17.3955 9.1252 17.0965 9.2002 16.7215L10.1002 13.6455C10.1752 13.3465 10.2502 13.0465 10.3252 12.8215 10.4002 12.5965 10.4002 12.2965 10.4002 12.0715 10.4002 11.6965 10.3252 11.3965 10.1752 11.2465 10.0252 11.0965 9.7252 11.0215 9.2752 11.0215 9.0502 11.0215 8.8252 11.0215 8.6002 11.0965 8.3752 11.1715 8.1502 11.2465 8.0002 11.3215L8.2252 10.3465C8.8252 10.1215 9.3502 9.8965 9.8752 9.7465 10.4002 9.5965 10.8502 9.5215 11.3752 9.5215 12.2002 9.5215 12.8752 9.7465 13.3252 10.1215 13.7752 10.4965 14.0002 11.0215 14.0002 11.6965 14.0002 11.8465 13.8502 13.0465 13.7752 13.2705L12.9502 16.3465C12.8752 16.5715 12.7992 16.8715 12.7252 17.1715 12.6502 17.4715 12.6502 17.6965 12.6502 17.8465 12.6502 18.2215 12.7252 18.5205 12.9502 18.6715 13.1002 18.8215 13.4752 18.8955 13.9242 18.8955 14.1502 18.8955 14.7502 18.8215 14.9002 18.7465M15.0389 5.9999C15.0389 7.1039 14.1429 7.9999 13.0389 7.9999 11.9349 7.9999 11.0389 7.1039 11.0389 5.9999 11.0389 4.8959 11.9349 3.9999 13.0389 3.9999 14.1429 3.9999 15.0389 4.8959 15.0389 5.9999"
+                                          fill="currentColor"></path>
+                                </g>
+                            </svg>
+                        </button>
+                    </td>
+                    <td>
+                        <button class="tableButtons">
+                            Schmeichel
+                        </button>
+                    </td>
+                    <td>5.3</td>
+                    <td>119</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="tableWrap">
+            <table class="table table-bordered table-striped tableBorder title">
+                <thead class="table-danger">
+                <tr>
+                    <th>
+                        &nbsp;
+                    </th>
+                    <th>
+                        <button class="tableButtons">
+                            Forwards
+                        </button>
+                    </th>
+                    <th>£</th>
+                    <th>**</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <button class="tableButtons">
+                            <svg width="24" height="24" viewBox="0 0 24 24">
+                                <g fill-rule="evenodd">
+                                    <path d="M14.9002 18.7465L14.6742 19.7215C14.0002 20.0205 13.4002 20.1715 13.0252 20.3215 12.6502 20.4715 12.1252 20.5465 11.6002 20.5465 10.7752 20.5465 10.1002 20.3215 9.6502 19.9465 9.2002 19.5715 8.9752 19.0465 8.9752 18.3715 8.9752 18.1455 8.9752 17.8465 9.0502 17.6215 9.0502 17.3955 9.1252 17.0965 9.2002 16.7215L10.1002 13.6455C10.1752 13.3465 10.2502 13.0465 10.3252 12.8215 10.4002 12.5965 10.4002 12.2965 10.4002 12.0715 10.4002 11.6965 10.3252 11.3965 10.1752 11.2465 10.0252 11.0965 9.7252 11.0215 9.2752 11.0215 9.0502 11.0215 8.8252 11.0215 8.6002 11.0965 8.3752 11.1715 8.1502 11.2465 8.0002 11.3215L8.2252 10.3465C8.8252 10.1215 9.3502 9.8965 9.8752 9.7465 10.4002 9.5965 10.8502 9.5215 11.3752 9.5215 12.2002 9.5215 12.8752 9.7465 13.3252 10.1215 13.7752 10.4965 14.0002 11.0215 14.0002 11.6965 14.0002 11.8465 13.8502 13.0465 13.7752 13.2705L12.9502 16.3465C12.8752 16.5715 12.7992 16.8715 12.7252 17.1715 12.6502 17.4715 12.6502 17.6965 12.6502 17.8465 12.6502 18.2215 12.7252 18.5205 12.9502 18.6715 13.1002 18.8215 13.4752 18.8955 13.9242 18.8955 14.1502 18.8955 14.7502 18.8215 14.9002 18.7465M15.0389 5.9999C15.0389 7.1039 14.1429 7.9999 13.0389 7.9999 11.9349 7.9999 11.0389 7.1039 11.0389 5.9999 11.0389 4.8959 11.9349 3.9999 13.0389 3.9999 14.1429 3.9999 15.0389 4.8959 15.0389 5.9999"
+                                          fill="currentColor"></path>
+                                </g>
+                            </svg>
+                        </button>
+                    </td>
+                    <td>
+                        <button class="tableButtons">
+                            Pope
+                        </button>
+                    </td>
+                    <td>
+                        4.9
+                    </td>
+                    <td>
+                        128
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="tableButtons">
+                            <svg width="24" height="24" viewBox="0 0 24 24">
+                                <g fill-rule="evenodd">
+                                    <path d="M14.9002 18.7465L14.6742 19.7215C14.0002 20.0205 13.4002 20.1715 13.0252 20.3215 12.6502 20.4715 12.1252 20.5465 11.6002 20.5465 10.7752 20.5465 10.1002 20.3215 9.6502 19.9465 9.2002 19.5715 8.9752 19.0465 8.9752 18.3715 8.9752 18.1455 8.9752 17.8465 9.0502 17.6215 9.0502 17.3955 9.1252 17.0965 9.2002 16.7215L10.1002 13.6455C10.1752 13.3465 10.2502 13.0465 10.3252 12.8215 10.4002 12.5965 10.4002 12.2965 10.4002 12.0715 10.4002 11.6965 10.3252 11.3965 10.1752 11.2465 10.0252 11.0965 9.7252 11.0215 9.2752 11.0215 9.0502 11.0215 8.8252 11.0215 8.6002 11.0965 8.3752 11.1715 8.1502 11.2465 8.0002 11.3215L8.2252 10.3465C8.8252 10.1215 9.3502 9.8965 9.8752 9.7465 10.4002 9.5965 10.8502 9.5215 11.3752 9.5215 12.2002 9.5215 12.8752 9.7465 13.3252 10.1215 13.7752 10.4965 14.0002 11.0215 14.0002 11.6965 14.0002 11.8465 13.8502 13.0465 13.7752 13.2705L12.9502 16.3465C12.8752 16.5715 12.7992 16.8715 12.7252 17.1715 12.6502 17.4715 12.6502 17.6965 12.6502 17.8465 12.6502 18.2215 12.7252 18.5205 12.9502 18.6715 13.1002 18.8215 13.4752 18.8955 13.9242 18.8955 14.1502 18.8955 14.7502 18.8215 14.9002 18.7465M15.0389 5.9999C15.0389 7.1039 14.1429 7.9999 13.0389 7.9999 11.9349 7.9999 11.0389 7.1039 11.0389 5.9999 11.0389 4.8959 11.9349 3.9999 13.0389 3.9999 14.1429 3.9999 15.0389 4.8959 15.0389 5.9999"
+                                          fill="currentColor"></path>
+                                </g>
+                            </svg>
+                        </button>
+                    </td>
+                    <td>
+                        <button class="tableButtons">
+                            Henderson
+                        </button>
+                    </td>
+                    <td>5.2</td>
+                    <td>122</td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="tableButtons">
+                            <svg width="24" height="24" viewBox="0 0 24 24">
+                                <g fill-rule="evenodd">
+                                    <path d="M14.9002 18.7465L14.6742 19.7215C14.0002 20.0205 13.4002 20.1715 13.0252 20.3215 12.6502 20.4715 12.1252 20.5465 11.6002 20.5465 10.7752 20.5465 10.1002 20.3215 9.6502 19.9465 9.2002 19.5715 8.9752 19.0465 8.9752 18.3715 8.9752 18.1455 8.9752 17.8465 9.0502 17.6215 9.0502 17.3955 9.1252 17.0965 9.2002 16.7215L10.1002 13.6455C10.1752 13.3465 10.2502 13.0465 10.3252 12.8215 10.4002 12.5965 10.4002 12.2965 10.4002 12.0715 10.4002 11.6965 10.3252 11.3965 10.1752 11.2465 10.0252 11.0965 9.7252 11.0215 9.2752 11.0215 9.0502 11.0215 8.8252 11.0215 8.6002 11.0965 8.3752 11.1715 8.1502 11.2465 8.0002 11.3215L8.2252 10.3465C8.8252 10.1215 9.3502 9.8965 9.8752 9.7465 10.4002 9.5965 10.8502 9.5215 11.3752 9.5215 12.2002 9.5215 12.8752 9.7465 13.3252 10.1215 13.7752 10.4965 14.0002 11.0215 14.0002 11.6965 14.0002 11.8465 13.8502 13.0465 13.7752 13.2705L12.9502 16.3465C12.8752 16.5715 12.7992 16.8715 12.7252 17.1715 12.6502 17.4715 12.6502 17.6965 12.6502 17.8465 12.6502 18.2215 12.7252 18.5205 12.9502 18.6715 13.1002 18.8215 13.4752 18.8955 13.9242 18.8955 14.1502 18.8955 14.7502 18.8215 14.9002 18.7465M15.0389 5.9999C15.0389 7.1039 14.1429 7.9999 13.0389 7.9999 11.9349 7.9999 11.0389 7.1039 11.0389 5.9999 11.0389 4.8959 11.9349 3.9999 13.0389 3.9999 14.1429 3.9999 15.0389 4.8959 15.0389 5.9999"
+                                          fill="currentColor"></path>
+                                </g>
+                            </svg>
+                        </button>
+                    </td>
+                    <td>
+                        <button class="tableButtons">
+                            Schmeichel
+                        </button>
+                    </td>
+                    <td>5.3</td>
+                    <td>119</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+
+</body>
+</html>
