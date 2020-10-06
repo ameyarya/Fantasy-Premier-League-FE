@@ -1,5 +1,5 @@
 # FANTASY PREMIER LEAGUE
-# fantasy-league-java-server
+
 ## Web-Development Project (Spring 2020)
 ### TEAM 5: Amey Arya, Anurag Shubham, Mohammed Owais Ahmed, Nikhita Singh
 
